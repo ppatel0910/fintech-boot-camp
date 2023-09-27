@@ -1,4 +1,16 @@
 # FinTech Boot Camp
+## Usage
+Before each class, pull in the latest courseware.
+```
+git pull coursware main
+```
+
+The repository is configured to have your origin be available on GitHub,
+simply use `git push`.
+```
+git push origin
+```
+
 ## Unit 2: Financial Programming with Python
 
 ### Helpful Links
