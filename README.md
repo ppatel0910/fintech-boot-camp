@@ -1,5 +1,6 @@
 # FinTech Boot Camp
 ## Usage
+### Updating Courseware
 Before each class, pull in the latest courseware.
 ```
 git pull coursware main
@@ -10,6 +11,23 @@ simply use `git push`.
 ```
 git push origin
 ```
+
+### Using Alpaca Markets
+To allow for interacting with the Alpaca API, we're using the Alpaca Python SDK
+within several of the classes notebooks.
+
+When interacting with this repository, rebuild the exported Anaconda 
+environment:
+```
+conda env create -f alpaca-environment.yml
+```
+
+When new packages are added, be sure to export the enviroment file:
+```
+conda env export | grep -v "^prefix: " > alpaca-environment.yml
+```
+
+Reference the installation instructions for Alpaca Markets in
 
 ## Unit 2: Financial Programming with Python
 
