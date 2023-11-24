@@ -32,76 +32,62 @@ Reference the installation instructions for Alpaca Markets in
 ## Unit 6: PyViz
 ### Helpful Links
 
-* The Form of Facts and Figures: Design Patterns for Interactive Information Visualization by Christian Behrens - https://christianbehrens.com/portfolio/project/foff
+In this module, you’ll use JupyterLab and the following Python libraries:
 
-* hvPlot User Guide: https://hvplot.pyviz.org/user_guide/index.html
+- scikit-learn
 
-* PyViz Panel Reference Gallery: http://panel.pyviz.org/reference/index.html
+- hvPlot
 
-* [Geographic data in hvPlot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html)
+The scikit-learn library is automatically installed with Anaconda, and you’ve already worked with hvPlot in previous modules. But it’s good practice to confirm they are installed in your Conda development environment.
 
-* [GeoViews](https://geoviews.org/)
+## Before You Begin
 
-- - -
+Before class, confirm that scikit-learn and hvPlot are installed and working correctly in your `dev` environment. To do so, follow the steps in this section. 
 
-### FAQs
+### Confirm the scikit-learn and hvPlot Installations
 
-<details><summary>How do you save a visualization?</summary>
+To check that scikit-learn and hvPlot are installed in your Conda `dev` environment, complete the following steps.
 
-Each module of Pyviz has its own method for saving the visualization:
+1. Activate your Conda `dev` environment (if it isn’t already) by running the following in your terminal:
 
-* Visualizations that utilize Panda's `plot` functionality (Matplotlib backend) can be saved with the `plt.savefig()` function and supplying a file name as a parameter. For more information on this function, check out the [documentation](https://matplotlib.org/3.3.3/api/_as_gen/matplotlib.pyplot.savefig.html). 
+```shell
+conda activate dev
+```
 
-* Hvplot visualizations can be saved by clicking the disk icon next to the visualization:
+2. When the environment is active, run the following in your terminal:
 
-![hvplot_save.png](Images/hvplot_save.png)
+```shell
+conda list scikit-learn
+conda list hvplot
+```
 
-</details>
+If the scikit-learn and hvPlot libraries are installed on your machine, your terminal will display the following:
 
+![A screenshot shows that scikit-learn and hvPlot are listed in the terminal window.](Images/11-0-scikitlearn-hvplot-confirm.png)
 
-<details><summary>How do you save an interactive visualization as html?</summary>
+If you see scikit-learn and hvPlot listed in the terminal, you’re all set!
 
-The following code will produce an html page of the interactivate visualization saved with all of its functionality:
+### Install scikit-learn
 
-* Interactive hvPlot visualizations can be saved by storing the plot in a variable, running the `hvplot.save` function, and supplying the plot and a file name as parameters. An example can be seen below:
+If your terminal does not display scikit-learn and you need to install it, run the following:
 
-    ```python
-    plot = sale_prices_by_year.hvplot.bar(x='saleDate', y='saleAmt')
-    hvplot.save(plot, 'test.html')
-    ```
+```shell
+pip install -U scikit-learn
+```
 
-</details>
+When the installation is complete, return to Step 2 in the previous section to verify the installation.
 
+### Install hvPlot
 
-<details><summary>How do I customize elements of the visualization such as size?</summary>
+If you need to install the hvPlot library, run the following in your terminal:
 
-Each module of Pyviz has its own method for adjusting the size of the visualization:
+```shell
+conda install -c pyviz hvplot
+```
 
-* Changing the size of visualizations that utilize Panda's `plot` function (Matplotlib backend) can be done by adding the `figsize` parameter. This parameter accepts a tuple value for the size. The first value in the tuple is the width, the second is the height. For more information on this parameter, check out the `plot` function's [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html). 
+When the installation is complete, return to Step 2 in the previous section to verify the installation.
 
-* Changing the size of hvPlot visualizations can be done by adding the `width` and/or `height` parameters. These parameters accept an integer value representive of the number of pixels to use for the width and/or height. For more information on this parameter, check out the hvPlot *Customization* [documentation](https://hvplot.holoviz.org/user_guide/Customization.html).
-
-* Just as size can be customized, there are a multitude of other customization options that be incorporated by using the customization parameters included with the module. Again, those parameters can be found in the documentation:
-
-    * [Pandas `plot` function (Matplotlib backend):](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html).
-
-    * [hvPlot *Customization* documentation](https://hvplot.holoviz.org/user_guide/Customization.html). 
-    
-
-
-</details>
-
-<details><summary>Why can't we simply do a pip install pyviz and get all of these libraries at once?</summary>
-
-Pyviz is a group of multiple open source Python visualization libraries and tools. It would be great if they could all be installed with just a simple pip install, however the Pyviz modules are actually separate modules that are used together. These modules require multiple different dependencies - in some cases different versions of the same dependency. Additionally, being able to properly display the resulting visualizations in Jupyter Lab requires even further installations. Because of all of this, it is tricky to pack it all into one over-arcing install command. 
-
-To get Pyviz properly installed on your machine, check out the [Pyviz Installation Guide](PyVizInstallationGuide.md).
-
- 
-
-</details>
-
-
+You're now all set up!
 
 ---
 
