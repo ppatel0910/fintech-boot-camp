@@ -1,4 +1,5 @@
-### I am Priya Patel, a current fintech student attending Rutgers University. I previously majored in business administration, and upon graduation I started working in supply chain for a paper bag manufacturer. I chose to pursue fintech because it is a growing industry with rising demand, and it offers a wide range of career paths. Also because it is a field I can continually be challenged in, and learn more as the field evolves in the future.
+### 
+I am Priya Patel, a current fintech student attending Rutgers University. I previously majored in business administration, and upon graduation I started working in supply chain for a paper bag manufacturer. I chose to pursue fintech because it is a growing industry with rising demand, and it offers a wide range of career paths. Also because it is a field I can continually be challenged in, and learn more as the field evolves in the future.
 
 # FinTech Boot Camp
 ## Usage
