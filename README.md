@@ -1,63 +1,64 @@
+# Blockchain Terminology Guide
 
-# Install scikit-learn and hvPlot
+This guide provides an overview of key blockchain terminology that will help you understand the concepts discussed in this unit. 
 
-In this module, you’ll use JupyterLab and the following Python libraries:
+* **Blockchain**:  A network of nodes, or machines, linked in a peer-to-peer fashion that facilitates transactions in a verifiable and permanent way. A blockchain network is also often called an **open distributed ledger**.
 
-- scikit-learn
+* **Node**: A single machine that contributes to the infrastructure of a blockchain network. Blockchain networks are composed of multiple nodes that are interconnected and exchange the latest blockchain data with each other. This way, each node is up-to-date with the latest verified transactions on the blockchain network.
 
-- hvPlot
+* **Mining**: The process of adding verified transaction records to the current blockchain data. Miners act as separate nodes that are paid a fee to verify blockchain transactions by solving intense computations to finalize transactions.
 
-The scikit-learn library is automatically installed with Anaconda, and you’ve already worked with hvPlot in previous modules. But it’s good practice to confirm they are installed in your Conda development environment.
+* **Hash**: A product of a function that converts an input of letters and numbers into an encrypted output of a fixed length. Hashing is one way to enable security during message transmission when the message is intended for a particular recipient only. This ensures that the message has not been tampered with, as doing so would generate a new hash value different from the originating hash value.
 
-## Before You Begin
+* **Consensus algorithm**: A protocol used to verify the validity of transactions on a blockchain network. Because the blockchain network is decentralized, there is no central authority. Therefore, nodes within the blockchain network must be able to verify such transactions with certainty.
 
-Before class, confirm that scikit-learn and hvPlot are installed and working correctly in your `dev` environment. To do so, follow the steps in this section. 
+* **Proof of work (PoW)**: An asset-based consensus algorithm in which the model relies on producing a piece of data that is both resource (computation) and time intensive, but allows for others to verify the validity of the transaction. Proof of work is directly related to the blockchain mining concept in which miners solve intense computations to finalize transactions.
 
-### Confirm the scikit-learn and hvPlot Installations
+* **Proof of stake (PoS)**: A collateral-based consensus algorithm in which the model relies on transactional validators that are selected based on the amount of bitcoin or ether they hold. When they validate transactions, they put up a stake of their own bitcoin or ether and are rewarded (proportional to their stake) when a new block or transaction is added to the blockchain.
 
-To check that scikit-learn and hvPlot are installed in your Conda `dev` environment, complete the following steps.
 
-1. Activate your Conda `dev` environment (if it isn’t already) by running the following in your terminal:
+## Helpful Links
 
-```shell
-conda activate dev
-```
+<details><summary>Blockchain</summary>
 
-2. When the environment is active, run the following in your terminal:
+* <https://www.investopedia.com/terms/b/blockchain.asp>
 
-```shell
-conda list scikit-learn
-conda list hvplot
-```
+</details>
 
-If the scikit-learn and hvPlot libraries are installed on your machine, your terminal will display the following:
+<details><summary>Nodes</summary>
 
-![A screenshot shows that scikit-learn and hvPlot are listed in the terminal window.](Images/11-0-scikitlearn-hvplot-confirm.png)
+* <https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f>
 
-If you see scikit-learn and hvPlot listed in the terminal, you’re all set!
+</details>
 
-### Install scikit-learn
+<details><summary>Hash</summary>
 
-If your terminal does not display scikit-learn and you need to install it, run the following:
+* <https://www.investopedia.com/terms/h/hash.asp>
 
-```shell
-pip install -U scikit-learn
-```
+</details>
+<details><summary>Blockchain Mining</summary>
 
-When the installation is complete, return to Step 2 in the previous section to verify the installation.
+* <https://www.bitcoinmining.com/>
 
-### Install hvPlot
+</details>
+<details><summary>Consensus Algorithms</summary>
 
-If you need to install the hvPlot library, run the following in your terminal:
+* <https://www.binance.vision/blockchain/what-is-a-blockchain-consensus-algorithm>
 
-```shell
-conda install -c pyviz hvplot
-```
+</details>
+<details><summary>Proof of Authority</summary>
 
-When the installation is complete, return to Step 2 in the previous section to verify the installation.
+* <https://www.binance.vision/blockchain/proof-of-authority-explained>
 
-You're now all set up!
+</details>
+<details><summary>Proof of Work</summary>
 
----
+* <https://en.bitcoin.it/wiki/Proof_of_work>
 
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+</details>
+<details><summary>Proof of Stake</summary>
+
+* <https://www.investopedia.com/terms/p/proof-stake-pos.asp>
+
+</details>
+
