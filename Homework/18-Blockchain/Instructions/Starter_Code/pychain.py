@@ -1,9 +1,5 @@
 # PyChain Ledger
-################################################################################
-# You’ll make the following updates to the provided Python file for this
-# Challenge, which already contains the basic `PyChain` ledger structure that
-# you created throughout the module:
-
+---
 # Step 1: Create a Record Data Class
 # * Create a new data class named `Record`. This class will serve as the
 # blueprint for the financial transaction records that the blocks of the ledger
@@ -43,13 +39,18 @@ import hashlib
 # 3. Add an attribute named `sender` of type `str`.
 # 4. Add an attribute named `receiver` of type `str`.
 # 5. Add an attribute named `amount` of type `float`.
-# Note that you’ll use this new `Record` class as the data type of your `record` attribute in the next section.
+# Note that you’ll use this new `Record` class as the data type of your `record` 
+# attribute in the next section.
 
 
 # @TODO
 # Create a Record Data Class that consists of the `sender`, `receiver`, and
 # `amount` attributes
-# YOUR CODE HERE
+@dataclass
+class Block:
+    sender: str
+    receiver: str
+    amount: float
 
 
 ################################################################################
